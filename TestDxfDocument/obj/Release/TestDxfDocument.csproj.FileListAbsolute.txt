@@ -1,0 +1,8 @@
+C:\Development\netDXF\TestDxfDocument\bin\Release\TestDxfDocument.exe
+C:\Development\netDXF\TestDxfDocument\bin\Release\TestDxfDocument.pdb
+C:\Development\netDXF\TestDxfDocument\bin\Release\netDxf.dll
+C:\Development\netDXF\TestDxfDocument\bin\Release\netDxf.pdb
+C:\Development\netDXF\TestDxfDocument\bin\Release\netDxf.xml
+C:\Development\netDXF\TestDxfDocument\obj\Release\TestDxfDocument.csprojResolveAssemblyReference.cache
+C:\Development\netDXF\TestDxfDocument\obj\Release\TestDxfDocument.exe
+C:\Development\netDXF\TestDxfDocument\obj\Release\TestDxfDocument.pdb

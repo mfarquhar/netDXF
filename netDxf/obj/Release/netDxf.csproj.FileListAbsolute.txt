@@ -1,0 +1,5 @@
+C:\Development\netDXF\netDxf\bin\Release\netDxf.xml
+C:\Development\netDXF\netDxf\bin\Release\netDxf.dll
+C:\Development\netDXF\netDxf\bin\Release\netDxf.pdb
+C:\Development\netDXF\netDxf\obj\Release\netDxf.dll
+C:\Development\netDXF\netDxf\obj\Release\netDxf.pdb

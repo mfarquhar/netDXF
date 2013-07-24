@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{785380E0-CEB9-4C34-82E5-60D0E33E848E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>netDxf</RootNamespace>
+    <AssemblyName>netDxf</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\netDxf.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DocumentationFile>bin\Release\netDxf.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AciColor.cs" />
+    <Compile Include="Blocks\BlockEnd.cs" />
+    <Compile Include="CodeValuePair.cs" />
+    <Compile Include="Entities\Hatch.cs" />
+    <Compile Include="Entities\HatchPattern.cs" />
+    <Compile Include="Entities\HatchPatternBoundary.cs" />
+    <Compile Include="Entities\HatchPatternLineDefinition.cs" />
+    <Compile Include="Entities\LightWeightPolyline.cs" />
+    <Compile Include="Entities\LightWeightPolylineVertex.cs" />
+    <Compile Include="Header\DxfVersion.cs" />
+    <Compile Include="Header\SystemVariable.cs" />
+    <Compile Include="Vector2.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Matrix3.cs" />
+    <Compile Include="DxfObjectCode.cs" />
+    <Compile Include="Entities\Ellipse.cs" />
+    <Compile Include="Entities\EndSequence.cs" />
+    <Compile Include="Entities\NurbsCurve.cs" />
+    <Compile Include="Entities\NurbsVertex.cs" />
+    <Compile Include="Entities\Solid.cs" />
+    <Compile Include="Header\HeaderVariable.cs" />
+    <Compile Include="DxfObject.cs" />
+    <Compile Include="Objects\Dictionary.cs" />
+    <Compile Include="StringEnum.cs" />
+    <Compile Include="SubclassMarker.cs" />
+    <Compile Include="Symbols.cs" />
+    <Compile Include="Tables\ApplicationRegistry.cs" />
+    <Compile Include="Tables\BlockRecord.cs" />
+    <Compile Include="Tables\View.cs" />
+    <Compile Include="Tables\DimensionStyle.cs" />
+    <Compile Include="Tables\ViewPort.cs" />
+    <Compile Include="TextAligment.cs" />
+    <Compile Include="DxfDocument.cs" />
+    <Compile Include="DxfException.cs" />
+    <Compile Include="Entities\Arc.cs" />
+    <Compile Include="Entities\Attribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\AttributeDefinition.cs" />
+    <Compile Include="Entities\Vertex.cs" />
+    <Compile Include="Entities\Polyline3dVertex.cs" />
+    <Compile Include="Entities\IPolyline.cs" />
+    <Compile Include="Entities\IVertex.cs" />
+    <Compile Include="Entities\Point.cs" />
+    <Compile Include="Entities\PolyfaceMeshFace.cs" />
+    <Compile Include="Entities\PolyfaceMeshVertex.cs" />
+    <Compile Include="Entities\Polyline3d.cs" />
+    <Compile Include="Entities\IEntityObject.cs" />
+    <Compile Include="Entities\Insert.cs" />
+    <Compile Include="Entities\Line.cs" />
+    <Compile Include="Blocks\Block.cs" />
+    <Compile Include="Entities\Circle.cs" />
+    <Compile Include="Entities\Face3d.cs" />
+    <Compile Include="Entities\PolyfaceMesh.cs" />
+    <Compile Include="Entities\Polyline.cs" />
+    <Compile Include="Entities\Text.cs" />
+    <Compile Include="Entities\PolylineVertex.cs" />
+    <Compile Include="Reader.cs" />
+    <Compile Include="Tables\ITableObject.cs" />
+    <Compile Include="Tables\Layer.cs" />
+    <Compile Include="MathHelper.cs" />
+    <Compile Include="Tables\LineType.cs" />
+    <Compile Include="Tables\TextStyle.cs" />
+    <Compile Include="XData.cs" />
+    <Compile Include="StringCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Writer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XDataCode.cs" />
+    <Compile Include="XDataRecord.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
