@@ -3,3 +3,9 @@ C:\Development\netDXF\netDxf\bin\Release\netDxf.dll
 C:\Development\netDXF\netDxf\bin\Release\netDxf.pdb
 C:\Development\netDXF\netDxf\obj\Release\netDxf.dll
 C:\Development\netDXF\netDxf\obj\Release\netDxf.pdb
+C:\Development\net_DXF\netDxf\bin\Release\netDxf.xml
+C:\Development\net_DXF\netDxf\bin\Release\netDxf.dll
+C:\Development\net_DXF\netDxf\bin\Release\netDxf.pdb
+C:\Development\net_DXF\netDxf\obj\Release\netDxf.csprojResolveAssemblyReference.cache
+C:\Development\net_DXF\netDxf\obj\Release\netDxf.dll
+C:\Development\net_DXF\netDxf\obj\Release\netDxf.pdb

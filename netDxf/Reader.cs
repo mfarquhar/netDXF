@@ -2344,6 +2344,10 @@ namespace netDxf
                         break;
                     case 1001:
                         XData xDataItem = this.ReadXDataRecord(dxfPairInfo.Value);
+                        // to be safe if the xDataItem.ApplicationRegistry.Name already exists we will add the new entry to the existing one
+                        if (xData.ContainsKey(xDataItem.ApplicationRegistry))
+                            xData[xDataItem.ApplicationRegistry].XDataRecord.AddRange(xDataItem.XDataRecord);
+                        else
                         xData.Add(xDataItem.ApplicationRegistry, xDataItem);
                         break;
                     default:
